@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.judul {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.head {
+  font-weight: bolder;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.garis {
+  margin: auto;
+  height: 5px;
+  width: 140px;
+  background-color: #f9e539;
+}
+/* ==== Navigation Bar ==== */
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #333333;
+  position: fixed;
+  width: 100vw;
+  background: #f9e539;
+  font-weight: 100;
+  color: #000;
+  opacity: 0.95;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  z-index: 3;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  color: #552113;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  opacity: 1 !important;
+  border: 2px solid rgba(255, 228, 196, 0);
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #552113;
+}
+
+/*  */
+.home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/dekstop_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tittle {
+  text-align: center;
+  color: white;
+}
+.tittle h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+.tittle button {
+  color: white;
+  font-weight: bold;
+  margin: 30px;
+  border: 0;
+  background-color: #f9e539;
+  font-size: 1.2rem;
+  padding: 18px;
+  border-radius: 40px;
+}
+/* About Section */
+.about {
+  width: 80%;
+  height: 90vh;
+  margin: 80px auto 0px;
+}
+.content {
+  display: grid;
+}
+.content__1 {
+  grid-template-columns: 1fr 1fr;
+}
+.content__1 img {
+  max-width: 500px;
+}
+.content__1 .text {
+  font-size: 1rem;
+  align-self: center;
+}
+/* Keunggulan Section */
+.keunggulan {
+  width: 90%;
+  margin: 0px auto 60px;
+  gap: 30px;
+}
+.keunggulan .garis {
+  width: 240px;
+}
+.content__2 {
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  margin-top: 40px;
+}
+.features img {
+  max-width: 70px;
+}
+.features {
+  display: flex;
+  background-color: #f9e539;
+  border-radius: 10px;
+  padding: 12px;
+}
+.ket {
+  margin: auto 20px;
+}
+.ket p {
+  margin-top: 4px;
+}
+/* Location Section */
+.location {
+  width: 80%;
+  margin: 0px auto 50px;
+  gap: 30px;
+}
+.location .garis {
+  width: 100px;
+}
+.content__3 {
+  grid-template-rows: auto-fit, minmax(100px 1fr);
+  margin-top: 60px;
+  text-align: center;
+}
+.maps {
+  margin: auto;
+}
+.visit span {
+  font-weight: bolder;
+}
+.visit {
+  order: 1;
+  font-size: 1.2rem;
+  margin-top: 18px;
+}
+/* Footer */
+footer {
+  width: 100vw;
+  height: 60vh;
+  background-image: url(../img/footer.jpg);
+  background-size: cover;
+  color: white;
+  font-weight: bolder;
+  position: relative;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact button {
+  background-color: #f9e539;
+  margin-top: 50px;
+  padding: 12px;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  border: 3px solid #f9e539;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact button:hover {
+  border: 3px solid white;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 30px;
+}
+.item li a {
+  color: white;
+  font-size: 1.4rem;
+}
+.hadits {
+  padding-top: 30px;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+}
+.copy {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  background-color: #f9e539;
+  position: absolute;
+  bottom: 0px;
+  justify-content: center;
+  align-items: center;
+}
